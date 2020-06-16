@@ -1,62 +1,24 @@
 <html>
-<head>
-
-<style type="text/css">
-.carDashboard {
-  background: rgb(61,101,137);
-  height: 200px;
-  width: 500px;
-  margin:0 auto;
-  background: url('dashboard.png');
-  background-repeat: no-repeat;
-  position: relative;
-}
-.consumpedFuelNeedle {
-    -webkit-transition: -webkit-transform 2s ease-in-out;
-    -webkit-transform: rotate(180deg);
-    -moz-transform: rotate(180deg);
-    transform: rotate(180deg);
-    position: absolute;
-    bottom: -47px;
-    left: 34px;
-    width: 143px;
-    height: 123px;
-}
-.speedometerNeedle {
-    -webkit-transition: -webkit-transform 2s ease-in-out;
-    -webkit-transform: rotate(90deg);
-    -moz-transform: rotate(90deg);
-    transform: rotate(90deg);
-    position: absolute;
-    left: 132px;
-    width: 237px;
-    top: 19px;
-    /*-webkit-transform-origin: 0% 50%;
-    -moz-transform-origin: 0% 50%;
-    -o-transform-origin: 0% 50%;
-    transform-origin: 0% 50%;*/
-}
-.waterTemperatureNeedle {
-    -webkit-transition: -webkit-transform 2s ease-in-out;
-    -webkit-transform: rotate(270deg);
-    -moz-transform: rotate(270deg);
-    transform: rotate(270deg);
-    position: absolute;
-    bottom: -47px;
-    right: 34px;
-    width: 143px;
-    height: 123px;
-}
-</style>
-</head>
-<body>
-
-  <div class="carDashboard">
-    <img src="needle.png" class="consumpedFuelNeedle"  onclick="this.style.webkitTransform='rotate(90deg)'"/>
-    <img src="needle.png" class="speedometerNeedle"  onclick="this.style.webkitTransform='rotate(162deg)'"/>
-    <img src="needle.png" class="waterTemperatureNeedle"  onclick="this.style.webkitTransform='rotate(180deg)'"/>
-  </div>
-
-</body>
-
+  <head>
+    <link href="style.css" type="text/css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="carDashboard">
+      <img
+        src="needle.png"
+        class="consumpedFuelNeedle"
+        onclick="this.style.webkitTransform='rotate(90deg)'"
+      />
+      <img
+        src="needle.png"
+        class="speedometerNeedle"
+        onclick="this.style.webkitTransform='rotate(162deg)'"
+      />
+      <img
+        src="needle.png"
+        class="waterTemperatureNeedle"
+        onclick="this.style.webkitTransform='rotate(180deg)'"
+      />
+    </div>
+  </body>
 </html>
