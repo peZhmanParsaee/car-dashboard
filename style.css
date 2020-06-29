@@ -7,39 +7,47 @@
   background-repeat: no-repeat;
   position: relative;
 }
+
 .consumpedFuelNeedle {
-  -webkit-transition: -webkit-transform 2s ease-in-out;
-  -webkit-transform: rotate(180deg);
-  -moz-transform: rotate(180deg);
-  transform: rotate(180deg);
   position: absolute;
   bottom: -47px;
   left: 34px;
   width: 143px;
   height: 123px;
+
+  transition: transform 2s ease-in;
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
 }
+
 .speedometerNeedle {
-  -webkit-transition: -webkit-transform 2s ease-in-out;
-  -webkit-transform: rotate(90deg);
-  -moz-transform: rotate(90deg);
-  transform: rotate(90deg);
   position: absolute;
   left: 132px;
   width: 237px;
   top: 19px;
-  /*-webkit-transform-origin: 0% 50%;
-    -moz-transform-origin: 0% 50%;
-    -o-transform-origin: 0% 50%;
-    transform-origin: 0% 50%;*/
+
+  transition: transform 2s ease-out;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
 }
+
 .waterTemperatureNeedle {
-  -webkit-transition: -webkit-transform 2s ease-in-out;
-  -webkit-transform: rotate(270deg);
-  -moz-transform: rotate(270deg);
-  transform: rotate(270deg);
   position: absolute;
   bottom: -47px;
   right: 34px;
   width: 143px;
   height: 123px;
+
+  transition: transform 2s ease-in-out;
+  -webkit-transform: rotate(270deg);
+  -moz-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  -o-transform: rotate(270deg);
+  transform: rotate(270deg);
 }
